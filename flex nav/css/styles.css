@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', 'Helvetics Neue', 'Helvetics', 'Arial', sans-serif;
+    color: #343434;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+    margin: 0 0 0.625em;
+}
+
+/**/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.06rem;
+    line-height: 1.35em;
+}
+
+/* descendant selector applies to uls inside */
+
+nav ul {
+    list-style: none;
+    margin 0;
+    padding: 0;
+}
+
+/*pseudo classes - specify appearance of various anchor states */
+
+a:link {
+    text-decoration: none;
+    color: #1076ed
+}
+
+a:visited {
+    color: #dd0a7c
+}
+
+a:hover {
+    color: #dd730a
+}
+
+a:active {
+    color: green
+}
+
+header {
+    background: blue url(https://picsum.photos/1600/300?image=907) no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: right;
+    color: #e0f1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+    /*    margin-bottom: 0.625rem;*/
+}
+
+header h2 {
+    font-size: 2.5rem
+}
+
+main {
+    min-height: 500px;
+    margin-top: 45px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* anything above this divider is the standard base template */
+
+nav.topnav {
+    background: tomato;
+}
+
+nav.topnav a {
+    color: white;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px;
+    transition;
+    1s;
+    transition-timing-function:
+}
+
+nav.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+@media (min-width:600px) {
+/*    flex container */
+    nav.topnav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+/*    flex items */
+    nav.topnav li {
+        flex: 0 1 auto;
+    }
+    
+    nav.topnav a {
+        border: none;
+        margin: 0 3px;
+    }
+    
+    nav.topnav li:first-child {
+        margin-right: auto;
+    }
+}
